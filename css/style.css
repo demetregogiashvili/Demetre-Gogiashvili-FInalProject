@@ -49,7 +49,7 @@ html {
     text-align: center;
     
     /* ფონის სურათი (აუცილებელია, რომ hero-bg.jpg არსებობდეს /images ფოლდერში) */
-    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background: url('../images/CFE Logo.jpg') no-repeat center center;
     background-size: cover;
 }
 
