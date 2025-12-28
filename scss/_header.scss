@@ -1,1 +1,22 @@
+// scss/_header.scss
 
+.main-nav {
+    background-color: $dark !important; // მუქი ფონი ნავიგაციისთვის
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .campaign-title {
+        color: $white;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: $white !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: $warning !important; // Hover ეფექტი
+        }
+    }
+}
