@@ -1,319 +1,368 @@
 /* --- Global Styles and Reset (თქვენი ძირითადი სტილები) --- */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: #3498db;
+    text-decoration: none;
+    color: #3498db;
 }
 
 /* --- Header and Navigation Styles --- */
 header {
-    background: #2c3e50;
-    color: white;
-    padding: 10px 0;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 0;
 }
 
 .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .campaign-title {
-    font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+    list-style: none;
+    display: flex;
 }
 
 .nav-links li a {
-    color: white;
-    padding: 10px 15px;
-    display: block;
-    transition: background 0.3s;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
 }
 
 .nav-links li a:hover {
-    background: #34495e;
+    background: #34495e;
 }
 
 .search-box {
-    display: flex;
+    display: flex;
 }
 
 .search-box input {
-    padding: 5px;
-    border: none;
-    border-radius: 3px 0 0 3px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
 }
 
 .search-box button {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 0 3px 3px 0;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
 }
 
 /* Mobile Menu Setup (Hidden by default) */
 #menu-toggle, .burger {
-    display: none;
+    display: none;
 }
 
 /* --- Hero Section Styles --- */
 .hero {
-    /* ეს არის ფონის სურათის მაგალითი, თუკი hero-bg.jpg არსებობს */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .hero-box {
-    max-width: 800px;
-    padding: 20px;
+    max-width: 800px;
+    padding: 20px;
 }
 
 .hero-logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .hero-text h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero-quote {
-    font-style: italic;
-    margin-bottom: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 /* --- History Section Styles --- */
 .history-section {
-    padding: 40px 0;
-    background: #fff;
+    padding: 40px 0;
+    background: #fff;
 }
 
 .history-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 .history-text {
-    flex: 1;
+    flex: 1;
 }
 
 .history-text h2 span {
-    display: block;
-    font-size: 0.6em;
-    color: #777;
+    display: block;
+    font-size: 0.6em;
+    color: #777;
 }
 
 .history-image {
-    flex: 1;
+    flex: 1;
 }
 
 .history-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Motivation Section Styles (აქ არის გასწორებული ზომა: 10%) --- */
+/* --- Motivation Section Styles (ფოტოს ზომის დაფიქსვა!) --- */
 .motivation {
-    padding: 50px 0;
-    background: #eaf2f8;
-    text-align: center;
+    padding: 50px 0;
+    background: #eaf2f8;
+    text-align: center;
 }
 
 .motivation-box {
-    max-width: 800px;
-    margin: auto;
-    padding: 0 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 .motivation-title {
-    color: #2980b9;
-    margin-bottom: 15px;
+    color: #2980b9;
+    margin-bottom: 15px;
 }
 
 .motivation-text {
-    margin-bottom: 30px;
-    font-size: 1.1em;
+    margin-bottom: 30px;
+    font-size: 1.1em;
 }
 
 .motivation-box img.motivation-photo {
-    /* ზომა შემცირდა 10%-მდე */
-    max-width: 10%; 
-    height: auto;
-    display: block;
-    margin: 20px auto; 
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* ფოტოს ზომა დაფიქსულია 400px-ზე, 10% იყო ძალიან პატარა */
+    max-width: 400px; 
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* --- CTA Section Styles --- */
 .cta-section {
-    background: #3498db;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
+    background: #3498db;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
 .cta-container h2 {
-    margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .cta-container p {
-    margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .cta-button {
-    display: inline-block;
-    background: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    font-weight: bold;
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
 }
 
 .cta-button:hover {
-    background: #c0392b;
+    background: #c0392b;
 }
 
 /* --- ABOUT PAGE STYLES --- */
 
 .about-hero {
-    background-color: #f7f7f7;
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
 }
 
 .about-hero h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .mission-statement {
-    font-size: 1.1em;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+    font-size: 1.1em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Vision and Goals Section */
 .vision-section {
-    padding: 40px 0;
-    background-color: #fff;
+    padding: 40px 0;
+    background-color: #fff;
 }
 
 .vision-section h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
 }
 
 .goals-list {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .goals-list h3 {
-    color: #3498db;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    border-left: 3px solid #3498db;
-    padding-left: 10px;
+    color: #3498db;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-left: 3px solid #3498db;
+    padding-left: 10px;
 }
 
 .goals-list ul {
-    list-style: disc inside;
-    margin-left: 20px;
+    list-style: disc inside;
+    margin-left: 20px;
 }
 
 .goals-list li {
-    margin-bottom: 8px;
-    line-height: 1.5;
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 /* Team Section */
 .team-section {
-    padding: 50px 0;
-    background-color: #ecf0f1;
-    text-align: center;
-}
-
-.team-section h2 {
-    color: #2c3e50;
-    margin-bottom: 30px;
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    text-align: center;
 }
 
 .team-members {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .member-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 250px;
-    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
 }
 
 .member-card h3 {
-    color: #2980b9;
-    margin-bottom: 5px;
+    color: #2980b9;
+    margin-bottom: 5px;
 }
 
 .member-card p {
-    color: #7f8c8d;
-    font-size: 0.9em;
+    color: #7f8c8d;
+    font-size: 0.9em;
 }
 
-/* --- END ALL STYLES --- */
+/* --- რესპონსივობა (Media Queries) --- */
+
+@media (max-width: 768px) {
+    /* --- ნავიგაცია --- */
+    .main-nav {
+        flex-wrap: wrap; /* საშუალებას აძლევს ელემენტებს გადაეწყოს */
+        justify-content: space-between;
+    }
+    
+    .nav-links {
+        display: none; /* ნაგულისხმევად დამალვა */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .burger {
+        display: block; /* ბურგერ მენიუს გამოჩენა */
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+        order: 3; /* გადაგვაქვს ძებნის ველი ბოლოსკენ */
+    }
+
+    /* მენიუს გაშლა ჩექბოქსზე დაჭერით */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex; 
+    }
+
+    /* --- History Section (არეულობის დაფიქსვა) --- */
+    .history-container {
+        flex-direction: column; /* ელემენტები დალაგდება ერთმანეთის ქვეშ */
+        text-align: center;
+    }
+    
+    .history-text, .history-image {
+        flex: none; 
+        width: 100%;
+    }
+
+    /* --- Team Section (არეულობის დაფიქსვა) --- */
+    .team-members {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .member-card {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+}
