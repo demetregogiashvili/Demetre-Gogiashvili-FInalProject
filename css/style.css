@@ -1,366 +1,222 @@
-
-/* Reset */
+/* --- Global Styles and Reset (თქვენი ძირითადი სტილები) --- */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #f4f7f6; /* ღია ფონი */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header / Navigation */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* --- Header and Navigation Styles --- */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 0;
+}
+
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e88e5; /* ლურჯი ფონი */
-    padding: 15px 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .campaign-title {
-    font-weight: 700;
-    font-size: 24px;
-    color: #fff;
-    text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
-    gap: 25px;
+    display: flex;
 }
 
 .nav-links li a {
-    font-weight: 500;
-    font-size: 16px;
-    color: #b3e5fc; /* ღია ლურჯი */
-    text-decoration: none;
-    transition: color 0.3s;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #ffb74d; /* ნარინჯისფერი ჰოვერი */
+    background: #34495e;
 }
 
-/* Burger Menu (for mobile) */
-.burger {
-    display: none; 
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-/* Search Box */
 .search-box {
     display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
 .search-box input {
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 5px;
     border: none;
-    outline: none;
+    border-radius: 3px 0 0 3px;
 }
 
 .search-box button {
-    padding: 8px 12px;
+    background: #3498db;
+    color: white;
     border: none;
-    background-color: #ff9800; /* ნარინჯისფერი ღილაკი */
-    color: #fff;
-    border-radius: 4px;
+    padding: 5px 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 0 3px 3px 0;
 }
 
-.search-box button:hover {
-    background-color: #fb8c00;
+/* Mobile Menu Setup (Hidden by default) */
+#menu-toggle, .burger {
+    display: none;
 }
 
-/* Hero Section */
+/* --- Hero Section Styles --- */
 .hero {
-    padding: 60px 40px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .hero-box {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 40px;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding: 20px;
 }
 
 .hero-logo {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
     object-fit: cover;
 }
 
 .hero-text h1 {
-    font-size: 42px;
-    color: #1e88e5; /* ლურჯი სათაური */
-    margin-bottom: 15px;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero-quote {
     font-style: italic;
-    font-size: 18px;
-    color: #555;
     margin-bottom: 20px;
 }
 
-.hero-description {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* History Section */
+/* --- History Section Styles --- */
 .history-section {
-    padding: 80px 40px;
-    background-color: #e3f2fd; /* ღია ლურჯი ფონი */
+    padding: 40px 0;
+    background: #fff;
 }
 
 .history-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 50px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.history-text h2 {
-    font-size: 32px;
-    color: #1e88e5;
-    margin-bottom: 20px;
+.history-text {
+    flex: 1;
 }
 
-.history-text span {
+.history-text h2 span {
     display: block;
-    font-size: 16px;
+    font-size: 0.6em;
     color: #777;
-    margin-top: 5px;
-}
-
-.history-text p {
-    font-size: 16px;
-    line-height: 1.7;
 }
 
 .history-image {
-    flex-shrink: 0;
+    flex: 1;
 }
 
 .history-image img {
-    width: 350px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Motivation Section */
+/* --- Motivation Section Styles (აქ არის გასწორებული ზომა!) --- */
 .motivation {
-    padding: 60px 40px;
+    padding: 50px 0;
+    background: #eaf2f8;
     text-align: center;
 }
 
 .motivation-box {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 .motivation-title {
-    font-size: 32px;
-    color: #ff9800; /* ნარინჯისფერი სათაური */
-    margin-bottom: 20px;
+    color: #2980b9;
+    margin-bottom: 15px;
 }
 
 .motivation-text {
-    font-size: 18px;
-    line-height: 1.6;
     margin-bottom: 30px;
+    font-size: 1.1em;
 }
 
-.motivation-photo {
-    width: 100%;
-    max-width: 600px;
+.motivation-box img.motivation-photo {
+    /* ეს კოდი უზრუნველყოფს სურათის დაპატარავებას (50% სიგანე) */
+    max-width: 50%; 
     height: auto;
+    display: block;
+    margin: 20px auto; 
     border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* CTA Section */
+/* --- CTA Section Styles --- */
 .cta-section {
-    padding: 80px 40px;
-    background-color: #1e88e5; /* ლურჯი ფონი */
-    color: #fff;
+    background: #3498db;
+    color: white;
+    padding: 40px 0;
     text-align: center;
 }
 
-.cta-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .cta-container h2 {
-    font-size: 38px;
-    margin-bottom: 15px;
-    color: #fff;
+    margin-bottom: 10px;
 }
 
 .cta-container p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 12px 30px;
-    background-color: #ff9800; /* ნარინჯისფერი ღილაკი */
-    color: #fff;
-    text-decoration: none;
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-weight: 700;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
+    font-weight: bold;
 }
 
 .cta-button:hover {
-    background-color: #fb8c00;
+    background: #c0392b;
 }
 
-.section-divider {
-    height: 1px;
-    background-color: #ccc;
-    margin: 40px 0;
-}
-
-
-/* --- RESPONSIVENESS (Mobile/Tablet Adaptation) --- */
-
-@media (max-width: 1024px) {
-    /* Header */
-    .main-nav {
-        padding: 15px 30px;
-    }
-
-    /* Hero */
-    .hero-box {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        padding: 30px;
-    }
-
-    .hero-logo {
-        width: 250px;
-    }
-
-    .hero-text h1 {
-        font-size: 36px;
-    }
-
-    /* History */
-    .history-container {
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .history-image img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Header */
-    .main-nav {
-        flex-wrap: wrap; 
-        padding: 15px 20px;
-    }
-
-    .campaign-title {
-        order: 1;
-    }
-
-    .burger {
-        display: block; /* Show burger */
-        order: 2;
-    }
-
-    .nav-links {
-        display: none; /* Hide links by default */
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        text-align: center;
-        background-color: #1769aa; /* მენიუს ფონი მობილურზე */
-        padding: 10px 0;
-        order: 3;
-    }
-
-    /* Show menu when checked */
-    #menu-toggle:checked ~ .nav-links {
-        display: flex;
-    }
-
-    .search-box {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-        order: 4;
-    }
-    
-    .search-box input {
-        width: 70%;
-    }
-
-    /* Hero */
-    .hero {
-        padding: 30px 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 30px;
-    }
-    
-    /* History */
-    .history-section {
-        padding: 40px 20px;
-    }
-    
-    .history-container {
-        padding: 20px;
-    }
-    
-    /* CTA */
-    .cta-container h2 {
-        font-size: 30px;
-    }
-}
 /* --- ABOUT PAGE STYLES --- */
 
 .about-hero {
@@ -459,4 +315,4 @@ body {
     font-size: 0.9em;
 }
 
-/* --- END ABOUT PAGE STYLES --- */
+/* --- END ALL STYLES --- */
