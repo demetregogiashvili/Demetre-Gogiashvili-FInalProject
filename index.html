@@ -1,40 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFE </title>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჩვენს შესახებ | CFE</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <header>
+      <nav class="main-nav">
+        <h2 class="campaign-title">ჭადრაკი ყველასთვის</h2>
 
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger">☰</label>
 
+        <ul class="nav-links">
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="about.html">ჩვენს შესახებ</a></li>
+          <li><a href="services.html">სერვისები</a></li>
+          <li><a href="news.html">სიახლე</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
 
-<header>
-  <nav class="main-nav">
+        <div class="search-box">
+          <input type="text" placeholder="ძიება..." />
+          <button>🔍</button>
+        </div>
+      </nav>
+    </header>
 
-    <h2 class="campaign-title">CFE </h2>
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>ჩვენს შესახებ: CFE - ჭადრაკი ყველასთვის</h1>
+                <p class="mission-statement">
+                    ჩვენი მისიაა, ჭადრაკი ხელმისაწვდომი გავხადოთ საქართველოს ყველა მოქალაქისთვის, ასაკის, სქესისა და სოციალური სტატუსის მიუხედავად.
+                </p>
+            </div>
+        </section>
 
+        <section class="vision-section">
+            <div class="container">
+                <h2>ჩვენი ხედვა და მიზნები</h2>
+                <div class="goals-list">
+                    <h3>✅ ხედვა:</h3>
+                    <p>
+                        გავხდეთ საქართველოში საჭადრაკო განათლებისა და პოპულარიზაციის მთავარი პლატფორმა, რომელიც უზრუნველყოფს ინტელექტუალური სპორტის ეროვნულ დონეზე განვითარებას.
+                    </p>
+                    <h3>🎯 მიზნები:</h3>
+                    <ul>
+                        <li>ჭადრაკის პოპულარიზაცია რეგიონებში.</li>
+                        <li>უფასო სასწავლო მასალების შექმნა დამწყებთათვის.</li>
+                        <li>ადგილობრივი და ონლაინ ტურნირების ორგანიზება.</li>
+                        <li>პროფესიონალი მოჭადრაკეების ხელშეწყობა.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="burger">☰</label>
-
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-
-
-
-</body>
+        <section class="team-section">
+            <div class="container">
+                <h2>ჩვენი გუნდი</h2>
+                <p>
+                    CFE კამპანიის უკან დგას მოტივირებული ადამიანების გუნდი, რომლებსაც ჭადრაკის სწავლება და მისი სარგებლის გაზიარება გულით სურთ. ჩვენ ვართ პედაგოგები, პროგრამისტები და საერთაშორისო დონის მოჭადრაკეები.
+                </p>
+                <div class="team-members">
+                    <div class="member-card">
+                        <h3>თამაზ მჭედლიშვილი</h3>
+                        <p>დამფუძნებელი, მთავარი სტრატეგი</p>
+                    </div>
+                    <div class="member-card">
+                        <h3>ანა ბერიძე</h3>
+                        <p>საჭადრაკო განათლების მენეჯერი</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+    
+    <div class="section-divider"></div>
+  </body>
 </html>
