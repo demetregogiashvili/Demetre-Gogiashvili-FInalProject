@@ -1,3 +1,4 @@
+/* --- Global Styles and Reset (თქვენი ძირითადი სტილები) --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -154,7 +155,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Motivation Section Styles (აქ არის გასწორებული ზომა: 20%) --- */
+/* --- Motivation Section Styles (აქ არის გასწორებული ზომა: 15%) --- */
 .motivation {
     padding: 50px 0;
     background: #eaf2f8;
@@ -178,8 +179,8 @@ header {
 }
 
 .motivation-box img.motivation-photo {
-    /* ზომა შემცირდა 20%-მდე */
-    max-width: 20%; 
+    /* ზომა შემცირდა 15%-მდე (ძალიან პატარა უნდა იყოს) */
+    max-width: 15%; 
     height: auto;
     display: block;
     margin: 20px auto; 
