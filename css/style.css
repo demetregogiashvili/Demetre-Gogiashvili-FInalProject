@@ -155,7 +155,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Motivation Section Styles (აქ არის გასწორებული ზომა: 15%) --- */
+/* --- Motivation Section Styles (აქ არის გასწორებული ზომა: 10%) --- */
 .motivation {
     padding: 50px 0;
     background: #eaf2f8;
@@ -179,8 +179,8 @@ header {
 }
 
 .motivation-box img.motivation-photo {
-    /* ზომა შემცირდა 15%-მდე (ძალიან პატარა უნდა იყოს) */
-    max-width: 15%; 
+    /* ზომა შემცირდა 10%-მდე */
+    max-width: 10%; 
     height: auto;
     display: block;
     margin: 20px auto; 
