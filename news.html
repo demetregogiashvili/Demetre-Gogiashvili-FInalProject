@@ -1,161 +1,143 @@
-<!DOCTYPE html>
-<html lang="ka">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WFWR Campaign</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-   
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-
-
-    
-
 <header>
-  <nav class="main-nav">
-
-    <h2 class="campaign-title">WFWR Campaign</h2>
-
-  
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="burger">☰</label>
-
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <div class="search-box">
-      <input type="text" placeholder="Search..." />
-      <button>🔍</button>
-    </div>
-
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chess Platform</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">ძებნა</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 </header>
 
+<main>
+    <section class="container my-5 py-5 text-center">
+        <h2 class="display-4 fw-bold">On the Board</h2>
+        <p class="lead text-muted mx-auto" style="max-width: 800px;">
+            ჩვენი ჭადრაკის პლატფორმა მუდმივად ვითარდება. აქ ნახავთ:
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+            <li class="p-2">✅ ახალ სასწავლო მასალებს დამწყებთათვის და პროფესიონალებისთვის,</li>
+            <li class="p-2">✅ დღის ტაქტიკურ ამოცანებს,</li>
+            <li class="p-2">✅ ტურნირების შედეგებსა და საინტერესო პარტიების ანალიზს.</li>
+        </ul>
+    </section>
 
-        <!-- News Section: On the Move -->
-<section class="news-highlight">
-  <div class="news-container">
-    <h2 class="news-title">On the Move</h2>
-    <p class="news-text">
-      WFWR Campaign მუდმივად მუშაობს ახალი აქტივობებისა და რესურსების შემუშავებაზე. აქ ნახავთ:
-      <ul>
-        <li>ახალ საგანმანათლებლო პაკეტებს სკოლებისა და უნივერსიტეტებისთვის,</li>
-        <li>ინტერაქტიულ აქტივობებს ახალგაზრდა გოგონებისთვის,</li>
-        <li>უახლეს კვლევებს, ინიციატივებსა და ვიდეო-რესურსებს, რომლებიც აძლიერებენ ქალების ისტორიის, უფლებებისა და შესაძლებლობების ცოდნას.</li>
-      </ul>
-    </p>
-  </div>
-</section>
+    <section class="container mb-5">
+        <div class="alert alert-info text-center" role="alert">
+            <h4 class="alert-heading">უახლესი განახლებები!</h4>
+            <p class="mb-0">
+                გაეცანით ჩვენს უახლეს განახლებებს — ახალი ფუნქციები, 
+                ბოტთან თამაში, რეიტინგის სისტემა და ონლაინ მატჩები.
+                ჩვენი მიზანია, ჭადრაკი გახდეს ყველასთვის ხელმისაწვდომი და საინტერესო.
+            </p>
+        </div>
+    </section>
 
-        
-<!-- Latest Projects Section -->
-<section class="latest-project">
-  <div class="project-box">
-    <p>
-      გაიგეთ უახლესი პროექტების შესახებ, რომლებიც ამჟამად მიმდინარეობს WFWR Campaign-ში. 
-      აქ წარმოდგენილია ინოვაციური აქტივობები, საგანმანათლებლო ინიციატივები და ღონისძიებები, 
-      რომლებიც აძლიერებენ ქალთა ცოდნას, უფლებებს და შესაძლებლობებს.
-    </p>
-  </div>
-</section>
+    <section class="container my-5">
+        <div class="row align-items-center bg-light p-4 rounded shadow-sm">
+            <div class="col-md-7">
+                <h3>ჭადრაკის სამყარო დღეს</h3>
+                <p class="lead">News გვერდი ასახავს ჭადრაკის სამყაროს ყოველდღიურ განვითარებას.
+                აქ გამოქვეყნდება ახალი ფუნქციები, მოთამაშეების წარმატებები და
+                საინტერესო სტრატეგიული იდეები. თითოეული სიახლე დაგეხმარება
+                უკეთ გაიგო თამაში და გააუმჯობესო შენი უნარები.</p>
+                <a href="#" class="btn btn-primary">მეტი ინფორმაცია</a>
+            </div>
+            <div class="col-md-5 mt-3 mt-md-0">
+                <img src="images/chess01.jpg" class="img-fluid rounded shadow-lg" alt="Chess News">
+            </div>
+        </div>
+    </section>
 
-   <!-- 3 seqcia -->
-       <section class="news-card">  
-  <div class="news-content">  
-    <div class="news-text">  
- სიახლეების გვერდი გვიჩვენებს, როგორ ვითარდება ფემინიზმი ყოველდღიურ ცხოვრებაში. აქ გამოქვეყნდება ახალი პროექტები, ინოვაციური აქტივობები და ახალგაზრდა გოგონების წარმატებები, რომლებიც ქმნიან რეალურ ცვლილებებს. თითოეული ამბავი გვახსენებს, რომ ცვლილება არ არის მხოლოდ დიდი განცხადებები — ის წარმოიქმნება ყოველდღიურ, პატარა ნაბიჯებშიც, სადაც ქალი იძენს ხმას, იცავს უფლებებს და ახორციელებს შესაძლებლობებს.  
-    </div>  
-    <div class="news-image">  
-      <img src="images/foto01.jpg" alt="News Image">  
-    </div>  
-  </div>  
-</section>
+    <section class="container my-5">
+        <div class="card p-4 shadow-lg bg-info-subtle border-0">
+            <h3 class="card-title text-center text-info mb-3">ისტორიები არქივიდან: გარი კასპაროვი</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    ჩვენს News გვერდზე შეხვდებით ასევე „ისტორიებს არქივიდან“ —
+                    ლეგენდარულ პარტიებსა და დიდოსტატებს, რომლებმაც ჭადრაკის ისტორია შექმნეს.<br><br>
+                    ერთ-ერთი ასეთი ფიგურაა **გარი კასპაროვი** —
+                    მსოფლიო ჩემპიონი, რომლის სტილი, აგრესიული თამაში და
+                    ღრმა ანალიზი დღემდე შთაგონების წყაროა მოჭადრაკეებისთვის. 
+                </p>
+                <a href="#" class="btn btn-info mt-3">ნახე ლეგენდარული პარტიები</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- 4seqcia -->
-      <section class="archive-story">
-  <div class="archive-card">
-    <p>
-      სიახლეების გვერდზე წარმოდგენილია ახალი პროექტები და ინიციატივები, თუმცა აქ ასევე შეგიძლიათ შეხვდეთ „ისტორიებს არქივიდან“ — ისტორიულ ამბებს ქალების შესახებ, რომლებმაც შეცვალეს მსოფლიო. თითოეული ისტორია გვახსენებს, რომ ფემინიზმი ყოველთვის ბრძოლა იყო, რათა ქალებს მიეღოთ ხმა, შესაძლებლობები და თავისუფლება.<br><br>
-      არქივის ერთ-ერთი ყველაზე ცნობილი პერსონაჟია სუსან ბ. ენთონი (Susan B. Anthony). 
-      ქალთა უფლებების აქტივისტი, რომელიც აქტიურად იბრძოდა ქალების პოლიტიკური უფლებების — განსაკუთრებით საპარლამენტო არჩევნებში მონაწილეობისა და არჩევის შესაძლებლობის — მიღწევისთვის. მისი ბრძოლა დღემდე რჩება ფემინისტური მოძრაობის მტკიცე სიმბოლოდ და ინსპირაციის წყაროდ ყველა, ვინც ქალთა უფლებებს იცავს.
-    </p>
-  </div>
-</section>
+    <section class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">მითები vs სიმართლე</h2>
+        <p class="text-center text-muted mb-5">
+            ჭადრაკთან დაკავშირებული მითები ხშირად აფერხებს დამწყებებს.
+            აქ ნახავთ ყველაზე გავრცელებულ მოსაზრებებს და რეალურ ფაქტებს.
+        </p>
 
-   <!-- 5 seqcia -->
-<section class="myth-truth-section">
-  <div class="container">
-    <h2 class="section-title">მითები vs სიმართლე</h2>
-    <p class="section-description">
-      სიახლეების გვერდზე გამოქვეყნებული იქნება არა მხოლოდ ახალი პროექტები, ინიციატივები და აქტივობები, არამედ დამატებითი ინფორმაცია, რომელიც ეხმარება მკითხველს გაეცნოს რეალობას. 
-      აქ შეხვდებით განსაკუთრებით საინტერესო სექციას „მითი და რეალობა“ — გავრცელებული მითები ფემინიზმზე და სიმართლე, რომელიც მათთან არსებულ რეალურ ფაქტებს ასახავს. 
-      თითოეული ისტორია და ფაქტი გვახსენებს, რომ ცოდნა და სიზუსტე მნიშვნელოვანია შეცდომების თავიდან ასაცილებლად და მავნე სტერეოტიპების დამსხვრევისთვის.
-    </p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-danger">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">🔴 მითი 1</h5>
+                        <p class="card-text">ჭადრაკი მხოლოდ გენიოსებისთვისაა.</p>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-success">🟢 სიმართლე</h6>
+                        <p class="card-text small">ჭადრაკი სწავლითა და პრაქტიკით ყველას შეუძლია.</p>
+                    </div>
+                </div>
+            </div>
 
-    
-    <div class="cards-container">
-      <div class="myth-card">
-        <h3>მითი 1</h3>
-        <p>ფემინიზმი ნიშნავს, რომ ქალებს სურთ, კაცებს აჯობონ.</p>
-        <h4>სიმართლე</h4>
-        <p>ფემინიზმი ეხება თანასწორ უფლებებს, შესაძლებლობებსა და პატივისცემას ყველა სქესის წარმომადგენელთათვის.</p>
-      </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-danger">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">🔴 მითი 2</h5>
+                        <p class="card-text">დაგვიანებულია ჭადრაკის სწავლა.</p>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-success">🟢 სიმართლე</h6>
+                        <p class="card-text small">ჭადრაკის სწავლა ნებისმიერ ასაკში შეიძლება.</p>
+                    </div>
+                </div>
+            </div>
 
-      <div class="myth-card">
-        <h3>მითი 2</h3>
-        <p>ფემინიზმი "უაზრობაა", ქალებს ისედაც ყველაფრის უფლება აქვთ.</p>
-        <h4>სიმართლე</h4>
-        <p>მიუხედავად მიღწევებისა, ქალები დღესაც განიცდიან სქესობრივ უთანასწორობას, უხილავ დისკრიმინაციას სამუშაოსა და საზოგადოებაში.</p>
-      </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-danger">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">🔴 მითი 3</h5>
+                        <p class="card-text">ჭადრაკი მოსაწყენია.</p>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-success">🟢 სიმართლე</h6>
+                        <p class="card-text small">სწორი მიდგომით ჭადრაკი ძალიან დინამიური და საინტერესოა.</p>
+                    </div>
+                </div>
+            </div>
 
-      
-      <div class="myth-card">
-        <h3>მითი 3</h3>
-        <p>ფემინიზმი მხოლოდ ქალების ინტერესებზეა კონცენტრირებული.</p>
-        <h4>სიმართლე</h4>
-        <p>ფემინიზმი ახდენს სქესთა შორის სტერეოტიპების და სისტემური უსამართლობის წინააღმდეგ ბრძოლას და აძლიერებს მთლიანად საზოგადოებას.</p>
-      </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm border-danger">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">🔴 მითი 4</h5>
+                        <p class="card-text">მხოლოდ თეორიაა მნიშვნელოვანი.</p>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-success">🟢 სიმართლე</h6>
+                        <p class="card-text small">პრაქტიკა და ტაქტიკა ისეთივე მნიშვნელოვანია, როგორც თეორია.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-      <div class="myth-card">
-        <h3>მითი 4</h3>
-        <p>ფემინიზმი მხოლოდ დიდ ქალაქებში ან განვითარებულ ქვეყნებშია აქტუალური.</p>
-        <h4>სიმართლე</h4>
-        <p>ქალთა უფლებების პრობლემა გლობალურია და მისი დაცვა აუცილებელია ყველა კულტურასა და საზოგადოებაში.</p>
-      </div>
+<footer class="site-footer bg-dark text-white py-4">
+    </footer>
 
-       <div class="myth-card">
-        <h3>მითი 5</h3>
-        <p>ფემინიზმი ქალების “გადაჭარბებულ პრეტენზიებს” უკავშირდება.</p>
-        <h4>სიმართლე</h4>
-        <p>ფემინიზმი ეხება იმას, რომ ყველა ადამიანი, ქალებიც და კაცებიც, სარგებლობდნენ კანონის, განათლების, კარიერისა და უსაფრთხოების თანასწორი უფლებებით.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- footer -->
-       <footer class="site-footer">
-  <div class="footer-content">
-    <h3>WFWR Campaign</h3>
-    <p>WFWR Campaign — ცოდნა, უფლებები, ძალა. თითოეული ნაბიჯი ქალთა ხმის აღიარებისთვის ქმნის რეალურ ცვლილებას ყოველდღიურ ცხოვრებაში.</p>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 WFWR Campaign. ყველა უფლება დაცულია.</p>
-  </div>
-</footer>
-  </body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
