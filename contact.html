@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>კონტაქტი - Chess Platform</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Chess Platform</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="d-flex ms-3">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">ძებნა</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container page-header py-5 text-center">
+            <h1 class="display-4 fw-bold">დაგვიკავშირდით</h1>
+            <p class="lead text-muted">მოგვწერეთ ნებისმიერ შეკითხვაზე ან წინადადებაზე.</p>
+        </section>
+
+        <div class="container my-5">
+            <div class="row">
+                
+                <div class="col-lg-6 mb-4">
+                    <h2 class="mb-4">გამოგვიგზავნეთ შეტყობინება</h2>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">სრული სახელი</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">ელ. ფოსტა</label>
+                            <input type="email" class="form-control" id="emailAddress" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">შეტყობინების თემა</label>
+                            <select class="form-select" id="subject" aria-label="შეტყობინების თემა">
+                                <option selected>აირჩიეთ თემა</option>
+                                <option value="1">გამოწერა/ფასები</option>
+                                <option value="2">ტექნიკური პრობლემა</option>
+                                <option value="3">პერსონალური მენტორინგი</option>
+                                <option value="4">სხვა შეკითხვა</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="messageBody" class="form-label">შეტყობინება</label>
+                            <textarea class="form-control" id="messageBody" rows="5" required></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">ვეთანხმები პირობებს და მონაცემთა დამუშავებას.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">გაგზავნა</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <h2 class="mb-4">ჩვენი დეტალები</h2>
+                    
+                    <p class="lead">თუ გსურთ პირდაპირ დაგვიკავშირდეთ:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>📧 ელ. ფოსტა:</strong> info@chessplatform.ge</li>
+                        <li class="mb-2"><strong>📞 ტელეფონი:</strong> +995 555 12 34 56</li>
+                        <li class="mb-2"><strong>📍 მისამართი:</strong> ჭადრაკის ქ. N5, თბილისი, საქართველო</li>
+                    </ul>
+
+                    <hr>
+
+                    <h4 class="mt-4 mb-3">ჩვენი ოფისის მდებარეობა</h4>
+                    <div class="ratio ratio-16x9 shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000.5517112000001!2d44.7818456!3d41.7161877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40447348e42f7c07%3A0xc6c7b9c9f7d23d9b!2sTbilisi%20State%20University!5e0!3m2!1sen!2sge!4v1704771501234!5m2!1sen!2sge" 
+                            width="100%" 
+                            height="350" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Chess Platform. ყველა უფლება დაცულია.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
